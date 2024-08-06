@@ -34,7 +34,7 @@ function App() {
                         </div>
                     ))}
                 </div>
-            ) : !error ? (
+            ) : isLoading && !error ? (
                 <Loader />
             ) : (
                 <div> {error} </div>
